@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy 28th Anniversary</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #fff;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+section { padding: 80px 20px; }
+
+h1, h2 {
+    font-family: 'Playfair Display', serif;
+}
+
+h2 { color: gold; margin-bottom: 20px; }
+
+/* Hero */
+.hero h1 {
+    font-size: 3.2rem;
+    color: gold;
+    animation: glow 2s infinite alternate;
+}
+
+.hero h3 {
+    margin-top: 15px;
+    font-weight: 300;
+    color: #ffd700;
+}
+
+@keyframes glow {
+    from { text-shadow: 0 0 10px gold; }
+    to { text-shadow: 0 0 30px gold; }
+}
+
+/* Typewriter */
+.typewriter {
+    margin-top: 25px;
+    font-size: 1.2rem;
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid gold;
+    animation: typing 6s steps(70, end) forwards, blink 0.8s infinite;
+}
+
+@keyframes typing { to { width: 100%; } }
+@keyframes blink { 50% { border-color: transparent; } }
+
+/* Slideshow */
+.slideshow {
+    max-width: 850px;
+    margin: auto;
+}
+
+.slide { display: none; }
+
+.slide img {
+    width: 100%;
+    border-radius: 18px;
+    box-shadow: 0 0 25px rgba(255,215,0,0.4);
+}
+
+.fade { animation: fadeEffect 2s ease-in-out; }
+
+@keyframes fadeEffect {
+    from { opacity: 0.2; }
+    to { opacity: 1; }
+}
+
+/* Text blocks */
+.text-box {
+    max-width: 900px;
+    margin: auto;
+    line-height: 1.9;
+    font-size: 1.1rem;
+}
+
+/* Timeline */
+.timeline {
+    max-width: 900px;
+    margin: auto;
+}
+
+.timeline-item {
+    margin: 30px 0;
+    padding: 25px;
+    border-left: 5px solid gold;
+    background: rgba(255,255,255,0.08);
+    border-radius: 10px;
+}
+
+/* Quotes */
+.quote {
+    font-style: italic;
+    font-size: 1.2rem;
+    margin: 20px auto;
+    max-width: 800px;
+    color: #ffeaa7;
+}
+
+/* Finale */
+.final {
+    font-size: 1.3rem;
+    color: #ffdd59;
+}
+
+/* Hearts */
+.heart {
+    position: fixed;
+    bottom: -20px;
+    color: gold;
+    animation: float 7s linear infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(-110vh); opacity: 0; }
+}
+
+/* Sparkles */
+.sparkle {
+    position: fixed;
+    width: 6px;
+    height: 6px;
+    background: gold;
+    border-radius: 50%;
+    animation: sparkle 4s linear infinite;
+}
+
+@keyframes sparkle {
+    0% { transform: translateY(-10vh); opacity: 0; }
+    30% { opacity: 1; }
+    100% { transform: translateY(110vh); opacity: 0; }
+}
+
+/* Music button */
+#playBtn {
+    margin-top: 25px;
+    padding: 12px 25px;
+    background: gold;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+</style>
+</head>
+
+<body onclick="playMusic()">
+
+<audio id="bgMusic" loop>
+    <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<section class="hero">
+    <h1>Happy 28th Anniversary</h1>
+    <h3>Sandeep & Savita</h3>
+    <div class="typewriter">27th December • 28 Years of Love, Strength & Togetherness</div>
+    <button id="playBtn">▶ Tap to Play Music</button>
+</section>
+
+<section>
+    <h2>📸 Our Most Precious Memories</h2>
+    <div class="slideshow">
+        <div class="slide fade"><img src="img1.jpg"></div>
+        <div class="slide fade"><img src="img2.jpg"></div>
+        <div class="slide fade"><img src="img3.jpg"></div>
+        <div class="slide fade"><img src="img4.jpg"></div>
+        <div class="slide fade"><img src="img5.jpg"></div>
+    </div>
+</section>
+
+<section>
+    <h2>💍 A Journey Built on Love</h2>
+    <div class="timeline">
+        <div class="timeline-item">Two hearts met, chose each other, and began a lifelong journey.</div>
+        <div class="timeline-item">With patience and understanding, you turned challenges into strength.</div>
+        <div class="timeline-item">Every sacrifice you made shaped our family’s future.</div>
+        <div class="timeline-item">Your love became our safest place.</div>
+    </div>
+</section>
+
+<section>
+    <h2>🙏 From the Heart</h2>
+    <div class="text-box">
+        Dear Mummy & Papa,<br><br>
+        Your love is not loud, but it is powerful.  
+        It is seen in your sacrifices, your silent struggles, and your endless care.
+        You taught us that real love means standing together even when times are tough.<br><br>
+        I carry your values with pride and your blessings with gratitude.
+        Thank you for everything you have done, and everything you continue to do.
+        You are my greatest inspiration.
+        <br><br>
+        <strong>Happy 28th Anniversary ❤️</strong>
+    </div>
+</section>
+
+<section>
+    <h2>💖 Words That Define You</h2>
+    <div class="quote">“A successful marriage is built on respect, patience, and endless understanding.”</div>
+    <div class="quote">“Love grows deeper when two people choose each other every single day.”</div>
+</section>
+
+<section>
+    <h2>🎉 A Celebration of Forever</h2>
+    <div class="final">
+        Here’s to laughter, health, peace, and many more beautiful years together.<br>
+        May your bond continue to shine brighter with time ✨
+    </div>
+</section>
+
+<footer style="margin:50px 0; opacity:0.8;">
+    Crafted with love to honor 28 unforgettable years ❤️
+</footer>
+
+<script>
+// Slideshow
+let slideIndex = 0;
+const slides = document.getElementsByClassName("slide");
+function showSlides() {
+    for (let i = 0; i < slides.length; i++) slides[i].style.display = "none";
+    slideIndex++;
+    if (slideIndex > slides.length) slideIndex = 1;
+    slides[slideIndex - 1].style.display = "block";
+    setTimeout(showSlides, 4000);
+}
+showSlides();
+
+// Hearts
+setInterval(() => {
+    const h = document.createElement("div");
+    h.className = "heart";
+    h.innerHTML = "❤";
+    h.style.left = Math.random() * 100 + "vw";
+    h.style.fontSize = Math.random() * 20 + 15 + "px";
+    document.body.appendChild(h);
+    setTimeout(() => h.remove(), 7000);
+}, 500);
+
+// Sparkles
+setInterval(() => {
+    const s = document.createElement("div");
+    s.className = "sparkle";
+    s.style.left = Math.random() * 100 + "vw";
+    document.body.appendChild(s);
+    setTimeout(() => s.remove(), 4000);
+}, 300);
+
+// Music
+const music = document.getElementById("bgMusic");
+function playMusic() {
+    music.play();
+    document.getElementById("playBtn").style.display = "none";
+}
+</script>
+
+</body>
+</html>
+
